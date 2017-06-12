@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron text-center">
+    <h1>Вас приветствует система "Клиентский сервис"</h1>
+    <p>Система хранения информации о клиентах</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>@Html.ActionLink("Список клиентов", "Index", "Clients")</h3>
+            <p>Здесь можно посмотреть полный список всех клиентов в системе..</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>
+                @Html.ActionLink("Добавить новую анкету", "Create", "Clients")
+
+            </h3>
+            <p>Здесь можно добавить новую запись в список..</p>
+        </div>
+    </div>
+</div>
+
